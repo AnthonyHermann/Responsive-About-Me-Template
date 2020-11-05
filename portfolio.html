@@ -2,72 +2,80 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <!-- Section to load the required Bootstrap tags and CSS -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <!-- set viewport for media queries and responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- load Bootstrap CSS & Font Awesome CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Portfolio</title>
 </head>
 
 <body>
 
   <!-- Section for Navigation bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <section class="navbar-brand mb-1 h1">Mona Lisa</section>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <section class="navbar-toggler-icon"></section>
-  </button>
-    <section class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="nav navbar-nav navbar-right">
+  <nav class="navbar navbar-expand-xl navbar-light bg-light">
+
+    <a id="white" class="navbar-brand" href="#">Mona Lisa</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+
         <li class="nav-item">
-          <a class="nav-link" href="./contact.html">Contact</a>
+          <a class="nav-link" rel="Contacts Page" href="./contact.html">Contact</a>
         </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" rel="Portfolio Page" href="./portfolio.html">Portfolio</a>
+        </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="./portfolio.html">Portfolio</a>
+          <a class="nav-link" rel="About Me Page" href="./index.html">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./index.html">About</a>
-        </li>
+
       </ul>
-    </section>
+    </div>
   </nav>
 
+
   <!-- Section for main page elements -->
-  <main class="container p-3">
-    <section class="row">
-      <section class="col-md-12">
+  <main id="container" class="container">
+  
+    <div id="row1" class="row">
+      <div class="col-sm-5">
         <header class="page-header">
-          <h2>Portfolio</h2>
+          <h1>Portfolio</h1>
           <hr>
         </header>
-        <section class="row">
-          <section class="col-md-6">
-            <img src="./assets/images/portfolio1.jpg" alt="My Selfie Picture" class="img-wrapper float-left pr-3">
-            <img src="./assets/images/portfolio2.jpg" alt="My Covid-19 Picture" class="img-wrapper float-left pr-3">
-          </section>
-        </section>
-        <section class="row">
-          <section class="col-md-6">          
-            <img src="./assets/images/portfolio3.jpg" alt="My Farmstead Picture" class="img-wrapper float-left pr-3">
-            <img src="./assets/images/portfolio4.jpg" alt="My Cat Picture" class="img-wrapper float-left pr-3">
-          </section>
-        </section>       
-        <section class="row">
-          <section class="col-md-6">                
-            <img src="./assets/images/portfolio5.jpg" alt="My Modern Picture" class="img-wrapper float-left pr-3">
-          </section>
-        </section>
-      </section>
-    </section>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-5">
+        <img class="pictures" src="./assets/images/portfolio1.jpg" alt="My Selfie Picture">
+        <img class="pictures" src="./assets/images/portfolio2.jpg" alt="My Covid-19 Picture">
+        <img class="pictures" src="./assets/images/portfolio3.jpg" alt="My Farmstead Picture">
+        <img class="pictures" src="./assets/images/portfolio4.jpg" alt="My Cat Picture">
+        <img class="pictures" src="./assets/images/portfolio5.jpg" alt="My Modern Picture">
+      </div>
+    </div>
+
   </main>
 
+
+  <!-- Bonus item to add a sticky-footer -->
   <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+
     <section class="container text-center">
-      <small class="text-muted">&copy; 2020 Copyright</small>
+      <small class="text-muted">&copy; 2020 All Rights Reserved</small>
     </section>
+
   </footer>
+
 
   <!-- Section to load the required Bootstrap scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -75,5 +83,4 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>

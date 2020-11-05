@@ -2,64 +2,86 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title>About Me</title>
-  <!-- Section to load the required Bootstrap tags and CSS -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <!-- set viewport for media queries and responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- load Bootstrap CSS & Font Awesome CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <title>About Me</title>
 </head>
 
 <body>
 
   <!-- Section for Navigation bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <section class="navbar-brand mb-1 h1">Mona Lisa</section>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <section class="navbar-toggler-icon"></section>
-  </button>
-    <section class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="nav navbar-nav navbar-right">
+  <nav class="navbar navbar-expand-xl navbar-light bg-light">
+
+    <a id="white" class="navbar-brand" href="#">Mona Lisa</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+
         <li class="nav-item">
-          <a class="nav-link" href="./contact.html">Contact</a>
+          <a class="nav-link" rel="Contacts Page" href="./contact.html">Contact</a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="./portfolio.html">Portfolio</a>
+          <a class="nav-link" rel="Portfolio Page" href="./portfolio.html">Portfolio</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./index.html">About</a>
+
+        <li class="nav-item active">
+          <a class="nav-link" rel="About Me Page" href="./index.html">About</a>
         </li>
+
       </ul>
-    </section>
+    </div>
   </nav>
+  
 
   <!-- Section for main page elements -->
-  <main class="container p-3">
-    <section class="row">
-      <section class="col-md-12">
+  <main id="container" class="container">
+  
+    <div id="row1" class="row">
+      <div class="col-md-6">
         <header class="page-header">
-          <h2>About Me</h2>
+          <h1>About Me</h1>
           <hr>
         </header>
-        <section class="row">
-          <section class="col-md-6">
-            <img src="./assets/images/monalisa.jpg" alt="My Headshot Picture" class="img-wrapper float-left pr-3">
-             I'm a masterpiece of the Italian Renaissance. I'm from Florence, Italy. My favorite hobbies are Art, the Catholic church, and the cloth and silk business. My dream job is to be known for more than just a pretty smile. I live in the Louvre Museum‎, Paris. I want to be a web developer because I'm looking to join the 21st century.
-            <br><br>
-            My real name is Lisa Gherardini. I'm the wife of a Florentine cloth merchant named Francesco del Giocondo. We commissioned a painting by Leonardo da Vinci in 1503, but Leonardo took the completed portrait to France instead and it ended up in François I's collection.
-            <br><br>
-          </section>
-        </section>
-      </section>
-    </section>
+      </div>
+    </div>
+
+    <div id="row2" class="row">
+      <div class="col-md-6">
+        <img src="./assets/images/monalisa.jpg" alt="My Headshot Picture" class="img-wrapper float-left pr-3">
+          <p>I'm a masterpiece of the Italian Renaissance. I'm from Florence, Italy. My favorite hobbies are Art, the Catholic church, and the cloth and silk business. You may know me best for the painting done by Leonardo da Vinci. The painting's novel qualities include the subject's enigmatic expression. I live in the Louvre Museum‎, Paris. I am a member of the Gherardini family of Florence and Tuscany. My dream job is to be known for more than just a pretty smile. I want to be a web developer because I'm looking to join the 21st century.
+          </p>
+      </div>
+    </div>
+
+    <div id="row3" class="row">
+      <div class="col-md-6">
+        <p>
+        My real name is Lisa Gherardini. I'm the wife of a Florentine cloth merchant named Francesco del Giocondo. We commissioned a painting by Leonardo da Vinci in 1503, but Leonardo took the completed portrait to France instead and it ended up in François I's collection.
+        </p>
+      </div>
+    </div>
+
   </main>
 
+
+  <!-- Bonus item to add a sticky-footer -->
   <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+
     <section class="container text-center">
-      <small class="text-muted">&copy; 2020 Copyright</small>
+      <small class="text-muted">&copy; 2020 All Rights Reserved</small>
     </section>
+
   </footer>
+
 
   <!-- Section to load the required Bootstrap scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -67,5 +89,4 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
